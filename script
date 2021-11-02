@@ -1,0 +1,17 @@
+create database colegio;
+use colegio;
+create table alumnos (
+id int(11) not null primary key auto_increment,
+nombre varchar(40) not null,
+apellido varchar(40) not null,
+edad tinyint(2) not null,
+fecha timestamp default current_timestamp,
+provincia varchar(30)
+);
+INSERT INTO alumnos (nombre, apellido, edad, provincia) 
+VALUES 
+("Martin", "Gigli", 37, "CABA"),
+("Juan", "Peres", 20, "Formosa"),
+("Roberto", "Carlos", 70, "Santa fe"),
+("Jasmin", "Noble", 35, "Cordoba"),
+("Belen", "Garcia", 40, "San juan");
